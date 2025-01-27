@@ -1,0 +1,1793 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: rgb(24, 24, 24);
+  background: linear-gradient(
+    45deg,
+    rgba(24, 24, 24, 1) 15%,
+    rgba(45, 52, 54, 1) 36%
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #c0c0c0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.card {
+  background-color: #282828;
+  border: none;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #f2f2f2;
+}
+
+.card-text {
+  color: #d0d0d0;
+}
+
+.button-primary {
+  background-color: #d9534f;
+  border: none;
+}
+
+.button-outline-primary {
+  color: #d9534f;
+  border-color: #d9534f;
+}
+
+.color-selector button {
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.color-selector button:focus {
+  outline: 2px solid #fff;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: auto;
+  }
+}
+
+.navbar-container {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.app-container {
+  padding-top: 60px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  /* background: linear-gradient(
+    45deg,
+    rgba(24, 24, 24, 1) 15%,
+    rgba(45, 52, 54, 1) 36%
+  ); */
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 120vh;
+}
+
+.custom-grid .band-photo,
+.custom-grid .products-section {
+  height: 50vh;
+}
+
+.band-photo img,
+.tshirt-one img,
+.tshirt-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .band-photo,
+  .products-section {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 7rem;
+}
+
+.hero-section {
+  position: relative;
+  padding-top: 56px;
+  background-image: url(./img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 120vh;
+}
+
+.tshirt-images-overlay {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tshirt-image {
+  width: 15%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .tshirt-image {
+    width: 30%;
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  padding-top: 60px;
+}
+
+.tshirt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tshirt-image-container {
+  position: relative;
+  width: 300px;
+}
+
+.tshirt-image-container:hover .tshirt-description {
+  display: block;
+}
+
+.tshirt-description {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.tshirt-image {
+  width: 100%;
+}
+
+.tshirt-image-container:hover .tshirt-image {
+  transform: scale(1.1);
+}
+
+.navbar {
+  width: 100%;
+  background-color: transparent !important;
+  font-size: 1.139rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 56px;
+}
+
+.hero-content,
+.main-content {
+  color: white;
+  text-align: center;
+}
+
+.tshirt-image-container img {
+  width: 105%;
+  transition: transform 0.3s ease;
+  transform: translate(20%, 20%);
+}
+
+.tshirt-image-container:hover .tshirt-description,
+.tshirt-image-container:hover .purchase-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #50f1be;
+}
+
+.tshirt-description,
+.purchase-btn {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.purchase-btn {
+  display: none;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .tshirt-image-container {
+    width: 50%;
+  }
+}
+
+.navbar-brand {
+  color: #f2f2f2;
+  font-size: 1.7rem !important;
+}
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 56px;
+  background-image: url("./img/heroo.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 120vh;
+}
+
+.hero-text {
+  font-size: 4.7rem;
+  text-shadow: 0 0 10px #000;
+  color: #e8e8e8;
+}
+
+.hero-t1 {
+  transform: translate(-130%, -10%);
+  font-family: "Brush Script MT", sans-serif;
+}
+
+.hero-t2 {
+  transform: translate(0%, 30%);
+  font-family: "Brush Script MT", sans-serif;
+}
+
+.hero-band-name {
+  font-size: 4.8rem;
+  text-shadow: 0 0 10px #000;
+  transform: translate(200%, 120%);
+  color: #e8e8e8;
+  font-family: "Brush Script MT", sans-serif;
+}
+
+.about-section {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #0f0f0f 30%, #1a1a2e 100%);
+  color: #39ff14;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.about-description h2 {
+  font-size: 2.2rem;
+  color: #76b852;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  width: 300px;
+  color: #39ff14;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.song-button {
+  background: #333;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.song-button:hover,
+.song-button:focus {
+  background: #76b852;
+  border-color: #76b852;
+}
+
+audio {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
+@media (max-width: 756px) {
+  .hero-text {
+    font-size: 3.7rem;
+  }
+
+  .hero-band-name {
+    font-size: 3.7rem;
+    transform: translate(70%, 50%);
+  }
+
+  .about-description p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero-text {
+    font-size: 0.7rem;
+  }
+
+  .hero-band-name {
+    font-size: 0.7rem;
+    transform: translate(70%, 50%);
+  }
+
+  .about-description p {
+    font-size: 0.9rem;
+  }
+
+  .hero-t1 {
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-text {
+    font-size: 4rem;
+  }
+
+  .hero-t1 {
+    transform: translate(-100%, -8%);
+  }
+
+  .hero-t2 {
+    transform: translate(0%, 25%);
+  }
+
+  .hero-band-name {
+    font-size: 3.6rem;
+    transform: translate(150%, 90%);
+  }
+
+  /* .merch-title {
+    color: #fff;
+    transform: translate(-50%);
+  } */
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+
+  .hero-t1 {
+    transform: translate(-70%, -5%);
+  }
+
+  .hero-t2 {
+    transform: translate(0%, 20%);
+  }
+
+  .hero-band-name {
+    font-size: 2.8rem;
+    transform: translate(120%, 60%);
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .hero-t1,
+  .hero-t2 {
+    transform: translate(0%, 0%);
+  }
+
+  .hero-band-name {
+    font-size: 2rem;
+    transform: translate(100%, 50%);
+  }
+}
+
+.button-primary,
+.button-outline-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-outline-primary {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.button-primary:hover,
+.button-outline-primary:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.tshirt-container {
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.tshirt-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.color-selector {
+  margin-top: 10px;
+}
+
+.color-selector button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+}
+
+.color-selector button.active {
+  border-color: #007bff;
+}
+
+.spotify-button {
+  color: #1db954;
+  font-size: 2rem;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  transition: color 0.3s ease;
+  z-index: 999;
+}
+
+.spotify-button:hover {
+  color: #1ed760;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.social-sidebar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.social-icon[href*="facebook.com"] {
+  color: #1877f2;
+}
+
+.social-icon[href*="twitter.com"] {
+  color: #1da1f2;
+}
+
+.social-icon[href*="instagram.com"] {
+  color: #f73344;
+}
+
+.social-icon[href*="youtube.com"] {
+  color: #ff0000;
+}
+.social-icon-spotify {
+  color: #1ed760;
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: inherit;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #50f1be;
+  transition: transform 0.3s ease !important;
+  transform: scale(1.2) !important;
+}
+
+.content-section {
+  padding-bottom: 60px;
+  background-color: #0f0f0f;
+}
+
+.footer-text {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.about-section .gallery-card {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.about-section .gallery-card img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  background-position: cover;
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-card .card-img-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+.audio-player {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+}
+
+.about-section .gallery-card {
+  height: 200rem;
+  overflow: hidden;
+  width: 100%;
+  align-content: center;
+}
+
+.about-section .gallery-card img {
+  width: 100%;
+  min-height: 600px;
+  object-fit: cover;
+}
+
+.gx-4 {
+  --bs-gutter-x: 1.5rem;
+}
+
+.gy-4 {
+  --bs-gutter-y: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-section .gallery-card img {
+    min-height: 250px;
+  }
+}
+
+.about-title {
+  font-size: 2.3rem;
+  color: white;
+  padding-left: 4rem;
+  padding-bottom: 3rem;
+  /* background: linear-gradient(135deg, #333333, #003300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+/* .about-text {
+  font-size: 1.8rem;
+  color: #fff;
+  position: relative;
+  border-radius: 50px;
+  height: 250px;
+  width: auto;
+  z-index: 1;
+  padding: 20px;
+  font-family: "Arial", sans-serif; 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  background-image: linear-gradient(toright, #141e30, #243b55);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-text::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    32deg,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 50%
+  );
+  background-size: 50px 50px;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.about-text:hover::before {
+  transform: rotate(45deg);
+}
+
+.about-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.about-text::after {
+  content: "Explore More";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+}
+
+.about-text:hover::after {
+  opacity: 1;
+} */
+
+.about-text {
+  font-size: 1.8rem;
+  color: #fff;
+  position: relative;
+  border-radius: 50px;
+  height: auto;
+  width: 600px;
+  z-index: 1;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(toright, #141e30, #243b55);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-text::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    32deg,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 50%
+  );
+  background-size: 50px 50px;
+  z-index: -1;
+  transition: all 0.5s ease;
+  transform: rotate(45deg);
+}
+
+.about-text:hover::before {
+}
+
+.about-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-text::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+}
+
+.about-text:hover::after {
+  opacity: 1;
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* This will vertically center the items in the container */
+  justify-content: space-between; /* This adds space between the text and the video */
+  margin: 5rem;
+}
+.about-container p {
+  width: 600px !important;
+}
+
+.about-text {
+  flex: 1; /* This allows the text to take up the remaining space that the video doesn't occupy */
+  padding-right: 20px; /* Adds some spacing between the text and the video */
+  width: 600px;
+}
+
+.about-video {
+  height: 600px; /* Maintain the aspect ratio of the video */
+  border-radius: 8px; /* Optional: Adds rounded corners to the video */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1.5rem;
+    padding: 15px;
+    height: auto;
+  }
+
+  .about-text::after {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 1.2rem;
+    padding: 10px;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .about-text::after {
+    font-size: 0.5rem;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1.5rem;
+    padding: 15px;
+    height: 200px;
+  }
+
+  .about-text::after {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991) {
+  .about-text {
+    font-size: 1rem;
+    padding: 10px;
+    height: 150px;
+    border-radius: 25px;
+  }
+
+  .about-text::after {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 150px;
+    border-radius: 25px;
+  }
+
+  .about-text::after {
+    font-size: 0.9rem;
+  }
+}
+
+.music-section {
+  background: linear-gradient(145deg, #0f0f0f 30%, #1a1a2e 100%);
+  border-radius: 50px;
+  margin-top: 3rem;
+}
+
+.about-section {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #0f0f0f 30%, #1a1a2e 100%);
+  color: #fff;
+  border-radius: 50px;
+}
+
+.custom-gap .col-md-3 {
+  margin-bottom: 1rem;
+}
+
+.custom-gap .first-row {
+  padding-right: 25%;
+}
+
+.custom-gap .second-row {
+  padding-left: 25%;
+}
+
+@keyframes writeText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes unwriteText {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.writingText {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid orange;
+  animation: writeText 2s steps(40, end) forwards;
+}
+
+.unwritingText {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: unwriteText 2s steps(40, end) forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+.listen-text {
+  position: fixed;
+  bottom: 10%;
+  left: 2%;
+  color: #fff;
+  font-size: 1.2rem;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+.listen-text span {
+  display: block;
+}
+
+.listen-merch {
+  position: fixed;
+  bottom: 10%;
+  left: 7%;
+  color: #fff;
+  font-size: 1.2rem;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+.listen-merch span {
+  display: block;
+}
+
+.shop-button {
+  color: white;
+  z-index: 999;
+}
+
+.shop-button img {
+  width: 30px;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  left: 100px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.shop-button:hover img {
+  transform: scale(1.1);
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  color: white !important;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  width: 1000px;
+  align-self: left;
+  justify-content: space-between;
+}
+.grid-container .form-container {
+  text-align: left;
+}
+.form-container,
+.contact-info {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-info {
+  font-size: 1.7rem;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align vertically */
+  align-items: center; /* Align horizontally */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    width: 30px;
+  }
+}
+
+.cart-btn {
+  font-size: 1.7rem;
+}
+
+.playing {
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+  color: white !important;
+}
+
+.music-container {
+  color: #fff;
+}
+
+.italic-style {
+  font-style: italic;
+}
+
+.add-to-cart {
+  background-color: #1ed760 !important;
+  border-color: #121212 !important;
+}
+
+.store-container {
+  height: 150vh;
+  color: white;
+}
+
+.store-title {
+  color: #151515;
+}
+
+.container-store {
+  color: white;
+}
+
+.text-center img {
+  height: 100%;
+}
+
+.align-items-center {
+  margin-top: 10rem;
+}
+
+.vert-title {
+  margin-bottom: 10rem !important;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+.merch-title {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .listen-text,
+  .listen-merch {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .music-section {
+    height: auto; /* Adjust height to be auto for better flow */
+  }
+
+  .music-section .row {
+    flex-direction: column-reverse; /* Stack the text above the image on small screens */
+  }
+
+  .music-section .col-md-6 {
+    margin-bottom: 20px;
+  }
+
+  .music-section audio {
+    width: 100%; /* Ensure audio player is not wider than its container */
+  }
+
+  .music-section .btn {
+    padding: 5px 10px; /* Adjust button size for better fit */
+    font-size: 0.8rem; /* Adjust font size for readability */
+  }
+}
+/* Adjustments for the gallery card images for responsiveness */
+@media (max-width: 768px) {
+  .gallery-card img {
+    height: 150px; /* Adjust height for smaller screens */
+    object-fit: cover; /* Ensure images cover the card area appropriately */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .gallery-card img {
+    height: 100px; /* Further reduce height for mobile devices */
+  }
+}
+
+/* Adjust album cover size in the music section on small devices */
+@media (max-width: 768px) {
+  .music-section img {
+    max-width: 80%; /* Reduce the size of the album cover on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .music-section img {
+    max-width: 100%; /* Allow the album cover to fill the container on very small screens */
+  }
+}
+
+.merch-section img {
+  max-width: 100%; /* Ensure maximum width of images is not more than their container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area of the container without stretching */
+}
+
+@media (max-width: 768px) {
+  .merch-container .merch-item {
+    flex-basis: 50%; /* Adjust the basis for items - 2 items per row */
+    max-width: 50%; /* Prevent any item from taking more than half the container's width */
+  }
+}
+
+@media (max-width: 480px) {
+  .merch-container .merch-item {
+    flex-basis: 100%; /* Stack items vertically on very small screens */
+    max-width: 100%;
+  }
+}
+
+.my-5 img {
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.my-5 img .text-center {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+/* .tshirt-image-container:hover .tshirt-image {
+  transform: scale(1.1);
+} */
+
+.purchase-items {
+  background-color: #1ed760 !important;
+}
+
+.container {
+  position: relative;
+  /* margin: 5rem; */
+}
+
+/* .drop-soon-line {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  z-index: 999;
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
+} */
+
+.cart-product-button {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.drop-soon-message {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff; /* Adjust color as needed */
+}
+
+.drop-soon-message {
+  position: absolute;
+  top: 2%;
+  left: 80%;
+  /* transform: translate(350%, 60%); */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Adjust background color and opacity */
+  backdrop-filter: blur(10px); /* Adjust blur amount */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 190px;
+  height: 270px;
+  z-index: 1;
+}
+
+.drop-soon-text {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  opacity: 99;
+  z-index: 99;
+}
+
+/* Add this CSS code to your existing stylesheet */
+
+/* Define the zoom effect on hover for t-shirt images */
+.tshirt-image-container:hover .tshirt-image {
+  transform: scale(1.1);
+}
+
+/* Add transition effect for smooth zoom transition */
+.tshirt-image {
+  transition: transform 0.3s ease !important;
+}
+
+.store-warning {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .drop-soon-message {
+    top: 10%;
+    width: 100px;
+    height: 200px;
+    font-size: 0.1rem !important;
+  }
+
+  .drop-soon-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .drop-soon-message {
+    top: 10%;
+    transform: translate(-50%, 50%);
+    font-size: 0.6rem !important; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add this CSS to your existing stylesheet */
+
+/* Ensure t-shirt images are responsive */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Adjust image size on smaller devices */
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Styles for the scrollbar track (background) */
+::-webkit-scrollbar {
+  width: 12px; /* You can adjust the width of the scrollbar here */
+}
+
+/* Styles for the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #181818; /* Your desired color */
+  border-radius: 6px; /* Optional: adds rounded corners to the scrollbar handle */
+}
+
+/* (Optional) Styles for the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #e8e8e8; /* Optional: change the track color if needed */
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.zoomable-image img {
+  transition: transform 0.2s ease; /* Smooth zoom transition */
+  overflow: hidden;
+}
+
+.zoomable-image img:hover {
+  transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+.image-container {
+  overflow: hidden; /* Ensures the overflow from the zoom is hidden */
+}
+
+.zoomable {
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  display: block; /* Removes bottom space/margin */
+  width: 100%; /* Ensures the image scales to the container's width */
+  height: auto; /* Maintains aspect ratio */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin: 0;
+  padding: 0;
+}
+
+.image-container .zoomable:hover {
+  transform: scale(1.1); /* Zoom in effect */
+}
+/* Store.css or your global CSS file */
+.image-overlay-container {
+  position: relative;
+  cursor: pointer;
+  display: block; /* Adjust this if needed */
+  line-height: 0; /* Remove space below the image */
+}
+
+.image-overlay-container img {
+  display: block;
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Removes whitespace */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+  opacity: 0; /* Hide overlay by default */
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.image-overlay-container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlay .text {
+  position: absolute; /* Position the text absolutely */
+  z-index: 1; /* Ensure the text is above the icon */
+}
+
+.overlay .overlay-icon {
+  position: absolute; /* Position the icon absolutely */
+  z-index: 2; /* Ensure the icon is above the text */
+  opacity: 0; /* Hide icon by default */
+  transition: opacity 0.5s ease; /* Add transition for smooth effect */
+}
+.image-overlay-container:hover .overlay .overlay-icon {
+  opacity: 1; /* Show icon on hover */
+  transform: translate(20%, 70%) !important;
+}
+
+.overlay-icon {
+  width: 250px !important;
+  height: auto !important;
+  border: none !important;
+  transform: translate(20%, 70%);
+}
+/* .overlay {
+  color: white;
+  font-size: 20px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+} */
+
+/* .text {
+  grid-column: 2 / 3;
+  grid-row: -2 /-3;
+  display: flex;
+  align-items: right;
+} */
+
+.about-container .about-video source {
+  height: 600px !important;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 0.5fr 3fr 1fr;
+}
+.about-container video {
+  grid-row: -3 /-2;
+}
+.about-container h2 {
+  display: flex;
+  align-self: baseline;
+  grid-column: 1 /2;
+  grid-row: -2 / -3;
+  font-size: 2.7rem;
+}
+.about-container p {
+  margin-right: 5rem;
+  grid-column: 1 /2;
+  grid-row: -2 / -3;
+  margin-right: 10rem;
+}
+.mic-graphic {
+  background-color: transparent;
+  width: 300px;
+  display: flex;
+  align-self: last baseline;
+  grid-row: 2/3;
+  grid-column: -3/ -2;
+}
+.content-icon {
+  align-items: right;
+  display: flex;
+  justify-content: flex-end;
+  align-content: baseline;
+}
+.content-img {
+  width: 300px;
+}
+.text-center {
+  margin-top: 5rem;
+}
+
+.music-section .song-list {
+  list-style: none;
+  counter-reset: song-number;
+  padding-left: 0;
+}
+.song-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-section .song-item {
+  counter-increment: song-number;
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #1a1a2e; /* Adjust color to fit your theme */
+  color: #fff; /* White text for readability */
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.music-section .song-item:before {
+  content: counter(song-number) ".";
+  margin-right: 10px;
+  color: #b3b3b3; /* Light grey for the number */
+}
+
+.music-section .song-item:hover {
+  background-color: #2a2a3e; /* Slightly lighter on hover for interaction feedback */
+}
+
+.content-icon {
+  align-items: left;
+  width: 200px;
+  height: auto;
+  align-self: last baseline;
+}
+
+.music-section {
+  height: 120vh !important;
+}
+
+.music-album {
+  display: flex;
+  gap: 0;
+}
+
+/* .my-5 h2 {
+  color: #fff;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.my-5 h3,
+p {
+  color: #fff;
+}
+
+.my-5 p {
+  text-align: center;
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.my-3 {
+} */
+
+/* General page styling */
+.product-detail {
+  color: #ffffff; /* White text for contrast */
+  background: rgb(24, 24, 24);
+  background: linear-gradient(
+    45deg,
+    rgba(24, 24, 24, 1) 15%,
+    rgba(45, 52, 54, 1) 36%
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+}
+.product-detail {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  background: transparent;
+}
+/* Product Title */
+.product-title {
+  font-size: 2rem; /* 32px */
+  font-weight: bold;
+  margin-bottom: 1rem; /* 16px */
+}
+
+/* Product Description */
+.product-description {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+  margin-bottom: 1.5rem; /* 24px */
+  height: 40vh;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  color: #fff; /* Sky blue for a pop of color */
+  margin-bottom: 2rem; /* 32px */
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #1a1a2e; /* Bright blue for visibility and aesthetics */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  border-radius: 30px; /* Fully rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-to-cart-btn:hover,
+.add-to-cart-btn:focus {
+  background-color: green; /* Darker shade of blue for interaction */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow for lifted effect */
+  cursor: pointer;
+  color: black;
+}
+
+/* Success message */
+.success-message {
+  color: #198754; /* Bootstrap success green */
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #d1e7dd; /* Light green background for contrast and visibility */
+}
+
+/* Ensure to add custom styling for Dropdowns, Images, and any other element as needed */
+
+/* Add more styles for dropdowns, images, and alerts as needed */
+
+.col-md-6 {
+  align-self: center;
+}
