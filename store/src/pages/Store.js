@@ -103,7 +103,7 @@ function Store() {
   const { addProductToCart } = useContext(CartContext);
 
   const handleAddToCart = (product) => {
-    addProductToCart(product.id, 1); // Assuming addProductToCart expects id and quantity
+    addProductToCart(product.id, 1);
   };
 
   const navigateToProductDetail = (productId) => {
@@ -112,9 +112,8 @@ function Store() {
 
   const renderDetailedProductView = (product, index) => {
     const isEven = index % 2 === 0;
-    const productImage = product.images[product.colors[0]]; // Assumes first color is default
+    const productImage = product.images[product.colors[0]];
 
-    // Wrap the image with a clickable div that navigates to the detail page
     const imageElement = (
       <div
         onClick={() => navigateToProductDetail(product.id)}

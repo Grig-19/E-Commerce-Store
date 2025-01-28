@@ -28,6 +28,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
+        {/* HERO SECTION */}
         <div className="hero-section">
           <NavbarComponent />
           <div className="listen-text">Listen to our music</div>

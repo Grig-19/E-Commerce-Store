@@ -26,7 +26,7 @@ function ProductCard({ product }) {
         variant="top"
         src={product.images[selectedColor]}
         alt={`Image of ${product.title}`}
-        onClick={() => {} /* navigate to product detail page if needed */}
+        onClick={() => {}}
       />
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
@@ -68,13 +68,13 @@ function ProductCard({ product }) {
             </Dropdown.Item>
           ))}
         </DropdownButton>
-        {/* <Button
+        <Button
           variant="primary"
           className="add-to-cart-btn"
           onClick={handleAddToCart}
         >
           Add to Cart
-        </Button> */}
+        </Button>
       </Card.Body>
     </Card>
   );

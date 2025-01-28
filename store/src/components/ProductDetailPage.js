@@ -80,13 +80,13 @@ function ProductDetailPage() {
               </DropdownButton>
             </Col>
           </Row>
-          {/* <Button
+          <Button
             variant="primary"
             onClick={handleAddToCart}
             className="add-to-cart-btn"
           >
             Add to Cart
-          </Button> */}
+          </Button>
           {showSuccessMessage && (
             <Alert variant="success" className="mt-3 success-message">
               Item successfully added to cart!
